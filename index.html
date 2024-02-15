@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Hello, I'm Heshie.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
       html {font-family: 'Courier New', Courier, monospace;} 
@@ -21,7 +23,8 @@
       }
       .social-icons {
         display: flex;
-        justify-content: left;
+        justify-content: center;
+        width: 200px;
         list-style: none;
       }
       .social-icons li {
@@ -30,6 +33,14 @@
       .social-icons a {
         color: #000; /* Icon color, change as needed */
         text-decoration: none;
+        /* Default icon size for mobile */
+        font-size: 40px; /* Adjust size as needed *
+      }
+      /* Larger screens */
+      @media (min-width: 768px) {
+          .social-icons a {
+              font-size: 30px; /* Larger size for desktop */
+          }
       }
     </style>
   </head>
